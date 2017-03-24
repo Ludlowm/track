@@ -24,7 +24,7 @@ $(document).ready(function() {
       $("#result").text("You should choose the CSS/Design path due to your creativity.")
 
     } else {
-      $("#result").text("Maybe you should rethink.");
+      $("#result").text("Please try again");
     }
   });
 });
