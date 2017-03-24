@@ -8,3 +8,16 @@ label {
   display: inline-block;
   text-align: right;
 }
+body{
+background-color: #75c9d2;
+}
+h1 {
+  font-family: "Acme", sans-serif;
+  font-size: 48px;
+  text-align: center;
+}
+#result {
+  padding: 20px;
+  font-size: 16px;
+  font-family: cursive;
+}
