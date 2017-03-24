@@ -1,13 +1,13 @@
 .container {
   float: left;
   height: 100%;
-  width: 40%;
+  width: 45%;
   font-size: 16px;
 }
 label {
   display: inline-block;
   text-align: right;
-  padding: 5px;
+  padding: 8px;
 }
 body{
 background-color: #75c9d2;
@@ -27,14 +27,13 @@ h1 {
 img {
   border-radius: 20px;
   height: 500px;
-  width: 650px;
-  margin-left: 150px;
+  width: 600px;
+  margin-left: 350px;
   margin-top: 75px;
 }
 button {
-  height: auto;
+  height: auto
   width: 150px;
   float: left;
   text-align: center;
-
 }

@@ -11,7 +11,7 @@ $(document).ready(function() {
     if (website === "yes-website" || company === "yes-company") {
       $("#result").text("You should choose the Ruby/Rails path.");
 
-    }else if (company === "yes-company" && backEnd === "yes-backend") {
+    }else if (backEnd === "yes-backend") {
       $("#result").text("You should choose the PHP/Drupel path.");
 
     }else if (app === "yes-app") {
