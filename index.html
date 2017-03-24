@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Track Selector</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.2.0.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Track Selector</h1>
+    <form id="track-selector">
+
+      <label for="name">name</label>
+      <input id="nameInput" type="text">
+
+      <label for="app">Do you like the thought of making an app for a company/independently?</label>
+      <select id="app" type="text">
+        <option value="yes-app">Yes</option>
+        <option value="no-app">No</option>
+        <option value="unsure-app">Not sure</option>
+      </select>
+
+      <label for="website">do you like the thought of making websites?</label>
+      <select id="website">
+        <option value="yes-website">Yes</option>
+        <option value="no-website">No</option>
+        <option value="unsure-website">Not sure</option>
+      </select>
+
+      <label for="company">Would you like to work in a well known, large corporation (such as Intel, Apple, etc.)</label>
+      <select id="company">
+        <option value="yes-company">Yes</option>
+        <option value="no-company">No</option>
+        <option value="unsure-company">Not sure</option>
+      </select>
+
+      <label for="design">Do you like designing out something(messing with colors, text styles)? </label>
+      <select id="design">
+        <option value="yes-design">Yes</option>
+        <option value="no-design">No</option>
+        <option value="unsure-design">Not sure</option>
+      </select>
+
+      <label for="back-end">Do you like the thought of doing back end development? </label>
+      <select id="back-end">
+        <option value="yes-backend">Yes</option>
+        <option value="no-backend">No</option>
+        <option value="unsure-backend">Not sure</option>
+      </select>
+        <button type="submit" name="button">Submit</button>
+      </form>
+
+      <div id="result">
+      </div>
+    </div>
+
+  </body>
+</html>
