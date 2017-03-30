@@ -9,22 +9,41 @@ $(document).ready(function() {
     var backEnd= $("#back-end").val();
 
     if (website === "yes-website" || company === "yes-company") {
-      $("#result").text("You should choose the Ruby/Rails path.");
+      $("#company").hide();
+      $("#app").hide();
+      $("#design").hide();
+      $("#back-end").hide();
+      $("#website").show();
 
-    }else if (backEnd === "yes-backend") {
-      $("#result").text("You should choose the PHP/Drupel path.");
+    }else if(backEnd === "yes-backend") {
+      $("#company").hide();
+      $("#app").hide();
+      $("#design").hide();
+      $("#website").hide();
+      $("#back-end").show();
 
-    }else if (app === "yes-app") {
-      $("#result").text("You should choose the Java/Javascript path.");
+    }else if(app === "yes-app") {
+      $("#company").hide();
+      $("#back-end").hide();
+      $("#design").hide();
+      $("#website").hide();
+      $("#app").show();
 
-    }else if (company === "yes-company") {
-      $("#result").text("You should choose the C# path due to the large backing of microsoft and wide acceptance in other corporations.")
+    }else if(company === "yes-company") {
+      $("#back-end").hide();
+      $("#app").hide();
+      $("#design").hide();
+      $("#website").hide();
+      $("#company").show();
 
-    }else if (design === "yes-design") {
-      $("#result").text("You should choose the CSS/Design path due to your creativity.")
-
+    }else if(design === "yes-design") {
+      $("#company").hide();
+      $("#app").hide();
+      $("#back-end").hide();
+      $("#website").hide();
+      $("#design").show();
     } else {
-      $("#result").text("Please try again");
+      return false;
     }
   });
 });
