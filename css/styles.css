@@ -17,12 +17,16 @@ h1 {
   font-size: 48px;
   text-align: center;
 }
-#result {
+#show-result {
   padding: 20px;
   margin-top: 100px;
   font-size: 16px;
   font-family: cursive;
   width: 400px;
+}
+#show-result div {
+  display: none;
+}
 img {
   border-radius: 20px;
   height: 200px;

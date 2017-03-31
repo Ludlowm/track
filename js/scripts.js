@@ -8,40 +8,40 @@ $(document).ready(function() {
     var design = $("#design").val();
     var backEnd= $("#back-end").val();
 
-    if (website === "yes-website" || company === "yes-company") {
-      $("#company").hide();
-      $("#app").hide();
-      $("#design").hide();
-      $("#back-end").hide();
-      $("#website").show();
+    if(company === "yes-company") {
+        $("#show-backend").hide();
+        $("#show-app").hide();
+        $("#show-design").hide();
+        $("#show-website").hide();
+        $("#show-company").show();
+
+    }else if (website === "yes-website" || company === "yes-company") {
+      $("#show-company").hide();
+      $("#show-app").hide();
+      $("#show-design").hide();
+      $("#show-backend").hide();
+      $("#show-website").show();
 
     }else if(backEnd === "yes-backend") {
-      $("#company").hide();
-      $("#app").hide();
-      $("#design").hide();
-      $("#website").hide();
-      $("#back-end").show();
+      $("#show-company").hide();
+      $("#show-app").hide();
+      $("#show-design").hide();
+      $("#show-website").hide();
+      $("#show-backend").show();
 
     }else if(app === "yes-app") {
-      $("#company").hide();
-      $("#back-end").hide();
-      $("#design").hide();
-      $("#website").hide();
-      $("#app").show();
-
-    }else if(company === "yes-company") {
-      $("#back-end").hide();
-      $("#app").hide();
-      $("#design").hide();
-      $("#website").hide();
-      $("#company").show();
+      $("#show-company").hide();
+      $("#show-backend").hide();
+      $("#show-design").hide();
+      $("#show-website").hide();
+      $("#show-app").show();
 
     }else if(design === "yes-design") {
-      $("#company").hide();
-      $("#app").hide();
-      $("#back-end").hide();
-      $("#website").hide();
-      $("#design").show();
+      $("#show-company").hide();
+      $("#show-app").hide();
+      $("#show-backend").hide();
+      $("#show-website").hide();
+      $("#show-design").show();
     } else {
       return false;
     }
